@@ -1,7 +1,14 @@
 import streamlit as st
+import requests
 import streamlit.components.v1 as components
-import sys, random
+from streamlit_lottie import st_lottie
+import sys, random, json
 
+def load_lottieurl(url:str):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
 
 def autocoids():
     answers = ['1st Gen H1-blockers','2nd Gen H1-blockers','Antagonist of H2-receptors','Mast cell stabilizers','5-HT1A (anxiolytic agonist)','5-HT1D/B (migraine headache)']
@@ -60,6 +67,8 @@ st.set_page_config(page_title="My webpage", page_icon=":tada", layout="wide")
 # Header section
 #st.subheader(" created by Edwin")
 st.title("This is a warm place for 藥理學地獄(我念完兩遍了)")
+lottie_pharmacy = load_lottieurl("https://lottie.host/7f2781e7-cab9-425c-8d63-dca7917a7fa9/TYjTbOOEvS.json") 
+st_lottie(lottie_pharmacy, key = "pharmacy")
 menu = ["Notes", "Quiz"]
 choice = st.sidebar.selectbox("Menu", menu)
 if choice == "Quiz":
@@ -76,4 +85,3 @@ elif choice == "Notes":
     st.write('第15週 抗癌藥物 link : https://1drv.ms/p/s!ApTEYroVO0GKgeAC7-e83imksTHD5w?e=8ja53a')
     st.write('第15週 抗細菌藥物 link : https://1drv.ms/p/s!ApTEYroVO0GKgd9--yBzxcPgZlUxFg?e=nF3tGL')
     st.write('第16週 抗病毒藥物 link : https://1drv.ms/p/s!ApTEYroVO0GKgeABqYMtg7nCgAC4HQ?e=n1hHhS')
-    

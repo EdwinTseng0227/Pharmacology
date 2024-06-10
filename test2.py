@@ -59,7 +59,7 @@ st.set_page_config(page_title="My webpage", page_icon=":tada", layout="wide")
 
 # Header section
 #st.subheader(" created by Edwin")
-st.title("This is a warm place for 藥理學地獄")
+st.title("This is a warm place for 藥理學地獄(我念完兩遍了)")
 menu = ["Notes", "Quiz"]
 choice = st.sidebar.selectbox("Menu", menu)
 if choice == "Quiz":

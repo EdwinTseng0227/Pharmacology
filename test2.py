@@ -66,7 +66,7 @@ if choice == "Quiz":
     st.subheader("(現在只有更新autocoids的藥物)")
     autocoids()
 elif choice == "Notes":
-    st.subheader("別亂編輯ㄚㄚㄚ,筆記斟酌看看就好,網路版會跑版,剩下的之後補上(我要睡了)")
+    st.subheader("別亂編輯ㄚㄚㄚ,筆記斟酌看看就好,網路版會跑版")
     st.write('第12週 Autocoids link : https://1drv.ms/p/s!ApTEYroVO0GKgeADHlGt8HEXrwwyIw?e=9ym2jG')
     st.write('第12週 高血壓 link : https://1drv.ms/p/s!ApTEYroVO0GKgd99oU6lGhCM-3U7Rg?e=A35Kl6')
     st.write('第13週 心絞痛跟心律不整 link : https://1drv.ms/p/s!ApTEYroVO0GKgd9_TRR4Vb2HkIjmFw?e=RRmRz7')

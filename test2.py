@@ -66,7 +66,7 @@ st.set_page_config(page_title="My webpage", page_icon=":tada", layout="wide")
 
 # Header section
 #st.subheader(" created by Edwin")
-st.title("This is a warm place for 藥理學地獄(我念完兩遍了)")
+st.title("This is a warm place for 藥理學地獄 QQ")
 #lottie_pharmacy = load_lottieurl("https://lottie.host/7f2781e7-cab9-425c-8d63-dca7917a7fa9/TYjTbOOEvS.json") 
 #st_lottie(lottie_pharmacy, key = "pharmacy")
 menu = ["Notes", "Quiz"]
@@ -75,7 +75,7 @@ if choice == "Quiz":
     st.subheader("(現在只有更新autocoids的藥物)")
     autocoids()
 elif choice == "Notes":
-    st.subheader("別亂編輯ㄚㄚㄚ,筆記斟酌看看就好,網路版會跑版")
+    st.subheader("筆記斟酌看看就好,然後ppt網路版會跑版,所以推薦下載下來")
     st.write('第12週 Autocoids link : https://1drv.ms/p/s!ApTEYroVO0GKgeADHlGt8HEXrwwyIw?e=9ym2jG')
     st.write('第12週 高血壓 link : https://1drv.ms/p/s!ApTEYroVO0GKgd99oU6lGhCM-3U7Rg?e=A35Kl6')
     st.write('第13週 心絞痛跟心律不整 link : https://1drv.ms/p/s!ApTEYroVO0GKgd9_TRR4Vb2HkIjmFw?e=RRmRz7')
